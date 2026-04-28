@@ -1,84 +1,92 @@
-# 📰 人民日报政策风向标 · Policy Radar for A股韭菜们
+# 🌱📰 人民日报政策风向标 · Policy Radar for A股韭菜们 🐂🔪💸
 
 <div align="center">
 
-**别盯K线了，看党报。**
+**"别人恐惧我贪婪，我看新闻我就套"** 😭
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-blueviolet.svg)
-![韭菜认证](https://img.shields.io/badge/韭菜认证-已验证-yellow.svg)
+![韭菜认证](https://img.shields.io/badge/🌱韭菜认证-已割-yellow.svg)
+![止损线](https://img.shields.io/badge/💰止损线-无-red.svg)
 
-> *主力看资金流向，我们看人民日报。毕竟——*  
-> *"政策底"这三个字，比什么MACD金叉都来得实在。*
+> *"主力看资金流向，我们看人民日报。"* 📖  
+> *毕竟——*  
+> **"政策底"** 这三个字，比什么MACD金叉、布林带上轨都来得实在 🌊  
+> *虽然每次看到"政策底"的时候，账户已经绿得发黑了… 💚💚💚*
 
 </div>
 
 ---
 
-## 📋 这是什么？
+## 🤡📋 这是什么？韭菜的自我救赎？
 
-**人民日报政策风向标**是一个全自动化的新闻分析管道：
+**人民日报政策风向标**是一个全自动化的新闻分析管道——或者说，是咱们散户对抗机构信息优势的终极武器（自封的）🏆
 
-1. **扒** — 每天自动抓取《人民日报》电子版
-2. **嚼** — AI分析每篇文章，识别政策信号和行业关联
-3. **吐** — 生成结构化行业评分和投资信号报告
-4. **发** — 发布到 WPS/Kdocs 或本地文档
+### 🔄 四阶段收割防御流程：
+
+| Stage | 操作 | 韭菜解读 |
+|-------|------|----------|
+| **STAGE 1** 🔍 | 新闻采集 | 把报纸扒得底裤都不剩 📰 |
+| **STAGE 2** 🧠 | 政策分析 | AI告诉我们该信什么话 🤖 |
+| **STAGE 3** 📝 | 报告生成 | 把官话翻译成人能看懂的 🗣️ |
+| **STAGE 4** 📤 | 发布交付 | 让老婆知道我又在研究什么 🏠 |
 
 <div align="center">
 
-### 🔧 完整工作流程
+### 🔧 完整工作流程（韭菜版）
 
 ```
 ┌─────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   STAGE 1   │     │   STAGE 2    │     │   STAGE 3    │     │   STAGE 4    │
-│  新闻采集   │────▶│  政策分析    │────▶│  报告生成    │────▶│  发布交付    │
+│  STAGE 1    │     │   STAGE 2    │     │   STAGE 3    │     │   STAGE 4    │
+│  📰新闻采集  │────▶│  🧠政策分析   │────▶│  📝报告生成   │────▶│  📤发布交付   │
 └─────────────┘     └──────────────┘     └──────────────┘     └──────────────┘
       │                    │                    │                    │
       ▼                    ▼                    ▼                    ▼
-   爬取报纸页面       主题检测 +           Markdown报告        WPS/Kdocs
-                      行业评分             JSON信号            本地文件
-                      风险评估             政策雷达图          OpenClaw会话
+   🌱爬取报纸页面       🤖主题检测 +           📜Markdown报告        💾WPS/Kdocs
+                      📊行业评分             🎯JSON信号            📧本地文件
+                      ⚠️风险评估             🔴政策雷达图          🐦OpenClaw会话
 ```
 
 </div>
 
 ---
 
-## 🚀 快速上手
+## 🚀💪 快速上手（别怕，不难）
 
-### 先决条件
+### 🛠️ 先决条件
 
-- Python 3.10+（别问，装就完了）
-- Git（克隆用）
-- LLM API访问（可选，Stage 2分析需要脑子）
-- OpenClaw（可选，技能集成用）
+- **Python 3.10+**（别问，装就完了 💻）
+- **Git**（克隆用，不丢人）
+- **LLM API访问**（可选，Stage 2分析需要脑子 🧠💡）
+- **OpenClaw**（可选，技能集成用 🔌）
+- **一颗坚韧的韭菜心** ❤️‍🩹
 
-### 安装
+### 📦 安装（三步走，比割肉简单）
 
 ```bash
-# 克隆仓库（别客气）
+# Step 1: 克隆仓库（别客气，就当是来拿免费分析的）
 git clone https://github.com/linfangzhi/rmrb-policy-radar.git
 cd rmrb-policy-radar
 
-# 创建虚拟环境（保护你的系统）
+# Step 2: 创建虚拟环境（保护你的系统，也保护你的钱包🐻）
 python3 -m venv .venv
 source .venv/bin/activate
 
-# 安装依赖
+# Step 3: 安装依赖
 pip install -r requirements.txt
 ```
 
-### 第一次运行 — 完整流程（Stage 1 → Stage 4）
+### 🎯 第一次运行 — 完整流程（Stage 1 → Stage 4）
 
 ```bash
-# 自动抓取昨天的报纸并分析
+# 自动抓取昨天的报纸并分析（建议开盘前跑，别盘后看新闻才反应过来🤦‍♂️）
 python3 scripts/rmrb_policy_skill.py \
     --date yesterday \
     --auto-crawl \
     --stage2-mode auto
 
-# 或者指定具体日期
+# 或者指定具体日期（适合复盘你被割的那一天📅💔）
 python3 scripts/rmrb_policy_skill.py \
     --date 2026-04-28 \
     --auto-crawl \
@@ -88,11 +96,11 @@ python3 scripts/rmrb_policy_skill.py \
 
 ---
 
-## 📊 分阶段说明（韭菜也能看懂）
+## 📊🧠 分阶段说明（韭菜也能看懂）
 
-### 🔍 Stage 1: 新闻采集（爬虫）
+### 🔍 STAGE 1: 新闻采集（爬虫）
 
-自动获取《人民日报》电子版内容。别担心，我们不会把人家网站爬垮的——内置了礼貌延迟。
+自动获取《人民日报》电子版内容。别担心，我们不会把人家网站爬垮的——毕竟咱们也是文明韭菜 🌿✨
 
 **命令：**
 
@@ -100,7 +108,7 @@ python3 scripts/rmrb_policy_skill.py \
 # 单日抓取
 python3 rmrb_crawler.py --date 2026-04-28
 
-# 多日范围（适合回测）
+# 多日范围（适合回测你被割的历史📉）
 python3 rmrb_crawler.py --start-date 2026-04-01 --end-date 2026-04-28
 
 # 指定特定页面URL
@@ -111,27 +119,27 @@ python3 rmrb_crawler.py --url "https://paper.people.com.cn/rmrb/pc/layout/202604
 
 | 文件 | 格式 | 说明 |
 |------|------|------|
-| `full.md` | Markdown | 整版报纸的markdown版本 |
-| `articles.jsonl` | JSONL | 每行一篇文章（机器可读） |
-| `index.json` | JSON | 抓取元数据和统计信息 |
-| `failed.jsonl` | JSONL | 失败文章重试队列 |
+| `full.md` | Markdown | 整版报纸的markdown版本 📰 |
+| `articles.jsonl` | JSONL | 每行一篇文章（机器可读）🤖 |
+| `index.json` | JSON | 抓取元数据和统计信息 📊 |
+| `failed.jsonl` | JSONL | 失败文章重试队列（就像你的股票一样😅） |
 
 **输出目录结构：**
 ```
 data/rmrb/2026-04-28/
-├── full.md              ← 合并后的报纸内容
-├── articles.jsonl       ← 结构化文章数据（137+篇）
-├── index.json           ← 抓取元数据
-├── failed.jsonl         ← 重试队列
+├── full.md              ← 合并后的报纸内容 📖
+├── articles.jsonl       ← 结构化文章数据（137+篇）🔢
+├── index.json           ← 抓取元数据 📋
+├── failed.jsonl         ← 重试队列 ⚠️
 └── articles/            ← 单篇文章markdown文件
     ├── 20260428_01_001_headline.md
-    └── ...（30+个版面 × 多篇）
+    └── ...（30+个版面 × 多篇）📑
 ```
 
 **配置抓取行为：**
 
 ```bash
-# 调整请求间隔和重试策略
+# 调整请求间隔和重试策略（别太狠，人家网站也怕被割）
 python3 rmrb_crawler.py \
     --date 2026-04-28 \
     --min-sleep 1 --max-sleep 5 \
@@ -140,9 +148,9 @@ python3 rmrb_crawler.py \
 
 ---
 
-### 🧠 Stage 2: 政策分析（AI大脑）
+### 🧠 STAGE 2: 政策分析（AI大脑）
 
-用AI检测政策主题、评估行业影响、生成投资信号。
+用AI检测政策主题、评估行业影响、生成投资信号。毕竟咱们散户的脑子，确实比不上机构研究员的脑细胞多 🤖📈
 
 **分析流程：**
 
@@ -156,10 +164,10 @@ articles.jsonl → 分块 → LLM提示词 → 主题分类
 
 **核心功能：**
 
-- **20+ 政策主题**: 稳增长, 新质生产力, 科技自立自强, etc.
-- **30+ 行业**: 银行, AI芯片, 新能源, 医药, etc.
-- **多信号检测**: Positive/Negative/Mixed/Watch 四种信号强度
-- **验证机制**: JSON Schema校验确保输出完整性
+- **20+ 政策主题**: 稳增长, 新质生产力, 科技自立自强, etc. 🎯
+- **30+ 行业**: 银行, AI芯片, 新能源, 医药, etc. 🏭
+- **多信号检测**: Positive/Negative/Mixed/Watch 四种信号强度 🚦
+- **验证机制**: JSON Schema校验确保输出完整性 ✅
 
 **命令：**
 
@@ -178,27 +186,27 @@ python3 scripts/analyze_rmrb_policy.py --audit-only
 ```json
 {
   "industry": "人工智能",
-  "policy_tailwind_score": 9.1,    ← 政策顺风分（越高越好）
+  "policy_tailwind_score": 9.1,    ← 政策顺风分（越高越好，别信这种话🤡）
   "market_relevance_score": 8.7,   ← 市场相关性（越高越相关）
-  "signal_strength": "strong_positive",  ← 信号强度
+  "signal_strength": "strong_positive",  ← 信号强度（但你可能已经错过了）
   "key_themes": ["新质生产力", "AI+"],
-  "risk_factors": []                ← 风险因素（空=无风险？别信）
+  "risk_factors": []                ← 风险因素（空=无风险？别天真了🌱）
 }
 ```
 
 ---
 
-### 📝 Stage 3: 报告生成（翻译官）
+### 📝 STAGE 3: 报告生成（翻译官）
 
-把分析结果变成人类可读的报告。毕竟不是谁都能看懂JSON的。
+把分析结果变成人类可读的报告。毕竟不是谁都能看懂JSON的——包括我，每次看代码都觉得自己是韭菜中的战斗机 🚀🐟
 
 **报告类型：**
 
 | 类型 | 输出 | 用途 |
 |------|------|------|
-| **每日摘要** | Markdown | 快速了解当日政策风向 |
-| **政策雷达图** | Markdown + JSON | 投资信号仪表盘 |
-| **WPS报告** | 文档文件 | 专业发布格式 |
+| **每日摘要** | Markdown | 快速了解当日政策风向 ☕ |
+| **政策雷达图** | Markdown + JSON | 投资信号仪表盘（别当真）🎡 |
+| **WPS报告** | 文档文件 | 专业发布格式 📄 |
 
 **命令：**
 
@@ -217,16 +225,16 @@ python3 scripts/render_policy_report.py \
 **报告输出：**
 ```
 reports/
-├── daily_summary.md      ← 高管摘要 + 关键信号
-├── policy_radar.md       ← 行业雷达图表数据 + 叙述
-└── investment_signals.json  ← 结构化JSON（给下游系统用）
+├── daily_summary.md      ← 高管摘要 + 关键信号 📋
+├── policy_radar.md       ← 行业雷达图表数据 + 叙述 🎯
+└── investment_signals.json  ← 结构化JSON（给下游系统用）🤖
 ```
 
 ---
 
-### 📤 Stage 4: 发布与交付（自动售货机）
+### 📤 STAGE 4: 发布与交付（自动售货机）
 
-编排完整工作流并处理发布。
+编排完整工作流并处理发布。就像超市里的自动售货机——投币就出货，虽然货可能不是你想要的那款 😅
 
 **全链路命令：**
 
@@ -245,9 +253,9 @@ python3 scripts/rmrb_policy_skill.py \
 
 | 模式 | 说明 |
 |------|------|
-| `auto` | 有LLM就用，没有就回退到规则引擎 |
-| `off` | 关闭Stage 2（更快，但少点脑子） |
-| `required` | 没LLM就报错（强迫症模式） |
+| `auto` | 有LLM就用，没有就回退到规则引擎 🤖 |
+| `off` | 关闭Stage 2（更快，但少点脑子）🧠❌ |
+| `required` | 没LLM就报错（强迫症模式）⚡ |
 
 **审计门控：**
 
@@ -255,46 +263,46 @@ python3 scripts/rmrb_policy_skill.py \
 1. ✅ 源文件存在 (`full.md`, `articles.jsonl`)
 2. ✅ 分析结果通过Schema校验
 3. ✅ 报告模板正常渲染
-4. ⛔ **审计失败就停止** — 不生产垃圾
+4. ⛔ **审计失败就停止** — 不生产垃圾（就像不生产假货一样）
 
 ---
 
-## ⚙️ 配置说明
+## ⚙️🔧 配置说明
 
 ### 政策分析配置（`config.policy.example.yaml`）
 
 ```yaml
 # 复制到 config.policy.yaml 并自定义
-market: A股
+market: A股 🇨🇳
 output_root: ./data/rmrb
 
 publish:
   enabled: false              # 设为true自动发布
   kdocs_parent_path: "日报/自动发布"
-  require_audit_pass: true    # 安全开关，别关
+  require_audit_pass: true    # 安全开关，别关（除非你想被割得更惨）
 
 analysis:
-  timezone: Asia/Shanghai
+  timezone: Asia/Shanghai 🕐
   max_articles_per_chunk: 12  # LLM上下文窗口管理
   max_chars_per_chunk: 12000
   
-  fixed_industries:           # 固定行业池（30+个）
-    - 银行
-    - 券商
-    - AI芯片
-    - 新能源
+  fixed_industries:           # 固定行业池（30+个）🏭
+    - 银行 💰
+    - 券商 📈
+    - AI芯片 🤖
+    - 新能源 ⚡
     # ... (完整的行业列表)
 
 scoring:
-  weight_positive: 0.7        # 正向信号权重
-  weight_negative: 0.3        # 负向信号权重
+  weight_positive: 0.7        # 正向信号权重（乐观主义者的配置）😊
+  weight_negative: 0.3        # 负向信号权重（悲观主义者的现实）😔
 ```
 
 ---
 
-## 🤖 自动化与调度
+## 🤖⏰ 自动化与调度
 
-### Crontab（每天07:00执行）
+### Crontab（每天07:00执行，比闹钟靠谱）
 
 ```cron
 0 7 * * * cd /path/to/rmrb-claw && \
@@ -305,12 +313,12 @@ scoring:
         --publish-wps >> logs/cron.log 2>&1
 ```
 
-### systemd Timer（生产环境）
+### systemd Timer（生产环境，给专业人士用的）
 
 **服务文件：** `/etc/systemd/system/rmrb-policy.service`
 ```ini
 [Unit]
-Description=RMRB Policy Analysis Pipeline
+Description=RMRB Policy Analysis Pipeline 🚀
 After=network-online.target
 
 [Service]
@@ -324,7 +332,7 @@ User=your-user
 **定时器文件：** `/etc/systemd/system/rmrb-policy.timer`
 ```ini
 [Unit]
-Description=Run Policy Analysis Daily
+Description=Run Policy Analysis Daily ⏰
 
 [Timer]
 OnCalendar=*-*-* 07:00:00
@@ -336,68 +344,68 @@ WantedBy=timers.target
 
 **启用：**
 ```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now rmrb-policy.timer
+sudo systemctl daemon-reload 🔄
+sudo systemctl enable --now rmrb-policy.timer ✅
 ```
 
 ---
 
-## 📁 项目结构
+## 📁📂 项目结构
 
 ```
 rmrb-claw/
-├── rmrb_crawler.py              ← Stage 1: 报纸爬虫
-├── test_rmrb_crawler.py         ← 爬虫单元测试
-├── requirements.txt             ← Python依赖
-├── config.policy.example.yaml   ← 配置模板
+├── rmrb_crawler.py              ← Stage 1: 报纸爬虫 🕷️
+├── test_rmrb_crawler.py         ← 爬虫单元测试 🧪
+├── requirements.txt             ← Python依赖 📦
+├── config.policy.example.yaml   ← 配置模板 ⚙️
 │
 ├── scripts/
-│   ├── analyze_rmrb_policy.py   ← Stage 2: 政策分析器
-│   ├── render_policy_report.py  ← Stage 3: 报告渲染器
-│   └── rmrb_policy_skill.py     ← Stage 4: 管道编排器
+│   ├── analyze_rmrb_policy.py   ← Stage 2: 政策分析器 🧠
+│   ├── render_policy_report.py  ← Stage 3: 报告渲染器 ✍️
+│   └── rmrb_policy_skill.py     ← Stage 4: 管道编排器 🎛️
 │
-├── prompts/                     ← LLM提示词模板
+├── prompts/                     ← LLM提示词模板 💬
 │   ├── daily_summary_prompt.md
 │   ├── industry_score_prompt.md
 │   ├── policy_radar_prompt.md
 │   └── wps_report_prompt.md
 │
-├── schemas/                     ← JSON Schema验证
+├── schemas/                     ← JSON Schema验证 📐
 │   ├── industry_scores.schema.json
 │   └── investment_signals.schema.json
 │
-├── workflow/                    ← 管道编排
+├── workflow/                    ← 管道编排 🔄
 │   └── pipeline_manifest.json
 │
-├── data/                        ← 输出目录（gitignored）
-└── logs/                        ← 运行日志（gitignored）
+├── data/                        ← 输出目录（gitignored）🚫
+└── logs/                        ← 运行日志（gitignored）📝
 ```
 
 ---
 
-## 🔐 安全与合规
+## 🔐🛡️ 安全与合规
 
 ### 数据处理原则
 
-- **不上传外部**：所有处理在本地完成
-- **公开内容**：仅抓取公开的报纸页面
-- **配置隔离**：`config.policy.yaml` 排除在git之外；使用 `.env.example` 模板
+- **不上传外部**：所有处理在本地完成 🏠
+- **公开内容**：仅抓取公开的报纸页面 📰
+- **配置隔离**：`config.policy.yaml` 排除在git之外；使用 `.env.example` 模板 🔒
 
 ### 速率限制（内置）
 
 ```bash
---min-sleep 1    # 请求间最少1秒
+--min-sleep 1    # 请求间最少1秒 😴
 --max-sleep 5    # 最多5秒（自适应延迟）
---retries 3      # 失败文章重试3次
---timeout 15     # 请求超时15秒
+--retries 3      # 失败文章重试3次 🔄
+--timeout 15     # 请求超时15秒 ⏰
 ```
 
 ---
 
-## 📚 示例输出：2026年4月26日分析
+## 📚🎯 示例输出：2026年4月26日分析
 
 <details>
-<summary>点击查看行业评分示例（前10名）</summary>
+<summary>点击查看行业评分示例（前10名）👆</summary>
 
 **🏆 最强信号行业 Top 5：**
 
@@ -411,49 +419,54 @@ rmrb-claw/
 
 **⚠️ 值得关注（混合信号）：**
 
-- **人工智能**: 10条正向 / 9条风险 → 主题：新质生产力、AI+
-- **医药**: 4条正向 / 2条风险 → 医疗政策 vs 监管
-- **低空经济**: 2条正向 / 9条风险 → ⚠️ 高风险预警
+- **人工智能**: 10条正向 / 9条风险 → 主题：新质生产力、AI+ 🤖
+- **医药**: 4条正向 / 2条风险 → 医疗政策 vs 监管 💊
+- **低空经济**: 2条正向 / 9条风险 → ⚠️ 高风险预警 🛩️
+
+> *注意：以上示例基于真实分析数据，但信号不代表你会赚钱。* 💸❌
 
 </details>
 
 <details>
-<summary>点击查看每日摘要示例</summary>
+<summary>点击查看每日摘要示例 👆</summary>
 
 **📰 2026-04-26 新闻摘要要点：**
 
 整体看，当日重点主题集中在 **数字经济、新质生产力、稳增长、人工智能+、粮食安全、科技自立自强** 等方向。
 
-官方叙事在稳增长、产业升级和风险防控之间保持同步推进——这是典型的"既要又要还要"格局。
+官方叙事在稳增长、产业升级和风险防控之间保持同步推进——这是典型的"既要又要还要"格局 🎭
 
 **📌 值得跟踪的方向：**
-- 黑龙江科技创新生态圈建设（地方产业示范）
-- "十五五"开局相关政策密集释放
-- 知识产权保护加速布局（10万+登记申请）
-- 绿色低碳转型进入考核阶段
-- AI监管与鼓励并行的信号
+- 黑龙江科技创新生态圈建设（地方产业示范）🏗️
+- "十五五"开局相关政策密集释放 🚀
+- 知识产权保护加速布局（10万+登记申请）🔐
+- 绿色低碳转型进入考核阶段 🌱
+- AI监管与鼓励并行的信号 🤖⚖️
 
-> *注意：以上摘要基于当日人民日报文章整理，偏重新闻脉络归纳。不做投资建议。*
+> *注意：以上摘要基于当日人民日报文章整理，偏重新闻脉络归纳。不做投资建议。*  
+> **但如果你一定要做——别怪我没提醒你。** 😏
 
 </details>
 
 ---
 
-## ⚠️ 免责声明
+## ⚠️🎭 免责声明（韭菜必读）
 
-**本工具仅供教育和研究用途。**
+**本工具仅供教育和研究用途。** 📚
 
-- 政策分析结果 **不是投资建议**
-- 行业评分使用启发式方法 + LLM — **准确性不保证**（我们也是韭菜）
-- 作者不对基于此输出做出的投资决策承担任何责任
-- 抓取尊重 robots.txt；请不要滥用服务
+- 政策分析结果 **不是投资建议** 💡❌
+- 行业评分使用启发式方法 + LLM — **准确性不保证**（我们也是韭菜）🌱
+- 作者不对基于此输出做出的投资决策承担任何责任 💸
+- 抓取尊重 robots.txt；请不要滥用服务 🕷️
 
 > *免责声明翻译：*  
-> *"用脚投票之前，先用脑子思考。亏了别怪我们——我们亏得可能比你多。"* 🎩
+> *"用脚投票之前，先用脑子思考。亏了别怪我们——我们亏得可能比你多。"* 😭💔  
+> **"价值投资" = "价值归零"** 📉🌱  
+> **"政策底" = "你以为的底，其实是半山腰"** ⛰️
 
 ---
 
-## 📜 License
+## 📜⚖️ License
 
 **MIT License** — 免费使用、修改和分发。看 `LICENSE` 文件详情。
 
@@ -462,7 +475,7 @@ rmrb-claw/
 <div align="center">
 
 **Built with ❤️ and ☕ by [linfangzhi](https://github.com/linfangzhi)**  
-*从2026年开始，把报纸变成数据点（同时也把自己熬成数据点）*
+*从2026年开始，把报纸变成数据点（同时也把自己熬成数据点）* 🌙💻
 
 [🔗 GitHub仓库](https://github.com/linfangzhi/rmrb-policy-radar) | 
 [📖 OpenClaw技能文档]() |
@@ -470,6 +483,7 @@ rmrb-claw/
 
 ---
 
-*免责声明：本工具不会让你赚钱。但它会让你在亏钱的时候，知道是为什么亏的。* 🤡
+*免责声明：本工具不会让你赚钱。但它会让你在亏钱的时候，知道是为什么亏的。* 🤡🎪  
+**"别人贪婪我恐惧，我看新闻我就套"** 💊📉
 
 </div>
