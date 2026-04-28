@@ -1,0 +1,26 @@
+# Virtual environment
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Data - real newspaper content (not for public repo)
+data/
+
+# Logs
+logs/
+crawler.log
+
+# Local config with potential secrets
+config.policy.yaml
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

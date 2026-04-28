@@ -1,0 +1,19 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "industry",
+      "direction",
+      "policy_tailwind_score",
+      "risk_pressure_score",
+      "market_relevance_score",
+      "signal_strength",
+      "confidence",
+      "time_horizon",
+      "summary",
+      "evidence_articles",
+      "tags"
+    ]
+  }
+}

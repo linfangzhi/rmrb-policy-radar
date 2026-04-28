@@ -1,0 +1,46 @@
+market: A股
+output_root: ./data/rmrb
+publish:
+  preferred_target: kingsoft_doc
+  enabled: false
+  kdocs_parent_path: 人民日报政策风向日报/自动发布
+  kdocs_file_id: ""
+  require_audit_pass: true
+analysis:
+  timezone: Asia/Shanghai
+  max_articles_per_chunk: 12
+  max_chars_per_chunk: 12000
+  include_full_markdown: true
+  fixed_industries:
+    - 银行
+    - 券商
+    - 保险
+    - 地产
+    - 建筑基建
+    - 消费
+    - 食品饮料
+    - 医药
+    - 新能源
+    - 电力
+    - 煤炭
+    - 石油石化
+    - 有色金属
+    - 钢铁
+    - 化工
+    - 汽车
+    - 低空经济
+    - 人工智能
+    - 半导体
+    - 算力
+    - 数据要素
+    - 软件信创
+    - 通信
+    - 军工
+    - 机器人
+    - 高端制造
+    - 农业
+    - 环保
+    - 物流航运
+    - 文化传媒
+    - 旅游
+    - 教育

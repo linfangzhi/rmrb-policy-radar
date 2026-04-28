@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": [
+    "date",
+    "source",
+    "market",
+    "total_policy_scores",
+    "top_policy_themes",
+    "industry_scores",
+    "risk_alerts",
+    "watch_tags"
+  ]
+}

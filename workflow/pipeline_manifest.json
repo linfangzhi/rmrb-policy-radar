@@ -1,0 +1,26 @@
+{
+  "name": "rmrb-policy-radar",
+  "version": "1.0",
+  "steps": [
+    {
+      "id": "crawl",
+      "description": "Use existing rmrb_crawler.py to ensure daily source files exist."
+    },
+    {
+      "id": "load",
+      "description": "Load full.md, articles.jsonl, index.json and build structured input."
+    },
+    {
+      "id": "analyze",
+      "description": "Generate theme, industry, risk, and score outputs."
+    },
+    {
+      "id": "report",
+      "description": "Render daily summary, policy radar, and WPS report."
+    },
+    {
+      "id": "publish",
+      "description": "Create publish request or call an existing OpenClaw WPS capability."
+    }
+  ]
+}
